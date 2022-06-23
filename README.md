@@ -14,16 +14,12 @@ After building out the VBA code, the results for the data set show that 2017 was
 ![](https://github.com/NortonAAA/stock_analysis/blob/main/VBA_Challenge_2017.png) ![](https://github.com/NortonAAA/stock_analysis/blob/main/VBA_Challenge_2018.png)
 
 ### Code Comparison
-There were two ways to approach this code and one was more beneficial in processing time. This came looking for opportunity to refactor the code to make this run faster and with less memory. Kely call outs as highlight below in the refactor image below is [1] Changing from Double to Single for Starting and Ending Price variables should reduce the amount of storage needed. [2] Utilization the tickerIndex array allows for a reduction of a Nested Loop cycle and able to be held and pulled into the output easier. [3] Formatting is integrated into the sub routine instead of having another button to call the formatting.
-#### Original Code vs. Refactored Code
+There were two ways to approach this code and one was more beneficial in processing time. This came looking for opportunity to refactor the code to make this run faster and with less memory. Kely call outs as highlight below in the refactor image below is [1] Changing from Double to Single for Starting and Ending Price variables should reduce the amount of storage needed. [2] Utilization the tickerIndex array allows for a reduction of a Nested Loop cycle and able to be held and pulled into the output easier. Formatting is integrated into the sub routine instead of having another button to call the formatting.
+#### Original Code vs. Refactored Code (Click to Enlarge)
 <img src="https://github.com/NortonAAA/stock_analysis/blob/main/AllStockAnalysis_Original.png" height="50%" width="45%" > <img src="https://github.com/NortonAAA/stock_analysis/blob/main/AllStockAnalysis_Refactored.png" height="50%" width="45%" >
 ### Performance of Code
 Based on the above changes the ultimately performance of the code ran almost 7% faster than the original code
 ![](https://github.com/NortonAAA/stock_analysis/blob/main/Code_Performance.png)
 
-
-
-
-
-
 ## Summary
+This was a good example of how coding can accomplish the same task in different ways. There are pros and cons to the usage of refactoring code. This biggest benefit is in the speed (as shown above) and memory usage. It also teaches a way to be more efficient in the programmers code. However, one of the bests drawbacks can be the learning curve as I personally experienced. For a simple program like this, it may not tax the system resources enough to warrant the extra debugging. Practice does make perfect.
